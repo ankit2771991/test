@@ -1,0 +1,8 @@
+|
+  ---
+  - hosts: all
+    tasks:
+      - name: Ensure a package is installed
+        yum:
+          name: httpd
+          state: present
